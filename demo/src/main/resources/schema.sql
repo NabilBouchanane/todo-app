@@ -1,0 +1,18 @@
+-- Table task
+DROP TABLE IF EXISTS task;
+
+CREATE TABLE task (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  completed BOOLEAN NOT NULL
+);
+
+-- Table dbuser
+DROP TABLE IF EXISTS dbuser;
+
+CREATE TABLE dbuser (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(250) NOT NULL,
+  password VARCHAR(250) NOT NULL,
+  role VARCHAR(250) NOT NULL
+);
